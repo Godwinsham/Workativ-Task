@@ -1,0 +1,90 @@
+.Background-Div{
+    position:absolute;
+    padding: 10px; 
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: #F0CA68;
+ }
+.item1{
+  grid-area: one;
+  line-height: 12px;
+}
+.item2{
+  grid-area: two;
+  line-height: 155px;
+}
+.item3{
+  grid-area: three;
+  line-height: 12px;
+}
+.item4{
+  grid-area: four;
+  line-height: 12px;
+}
+.item5{
+  grid-area: five;
+  line-height: 12px;
+}
+.item6{
+  grid-area: six;
+  line-height: 12px;
+}
+
+.grid-container{
+  display:inline-grid;
+  position: relative;
+  grid-gap:1px;
+  grid-template-areas:
+  "two one one"
+  "two three four"
+  "two five six ";
+  height: 200px;
+  width:400px;
+  border-radius: 2.3px;
+  background-color: white;
+  border:3px solid white;
+  margin-top: 170px;
+  margin-left: 200px;
+  box-shadow: 1px 1px 1px 1px #888888;
+ }
+
+.grid-container > div {
+  background-color:#B1B9A4;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 10px;
+  border: 1px solid #010100;
+}
+
+.photo A{grid-area: picA;}
+.photo B{grid-area: picB;}
+
+.grid2-container{
+  display: inline-grid;
+  position: absolute;
+  grid-gap: 1px;
+  grid-template-areas: "picA picB";
+  height: 150px;
+  width:400px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 2.3px;
+  margin-top: 170px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px 1px #888888;
+ }
+
+.grid2-container > div {
+  background-color:#BBD7DE;
+  text-align:center;
+  padding: 20px 0;
+  font-size: 10px;
+  border: 1px solid black;
+  line-height: 100px;
+}
+
+
+
+
